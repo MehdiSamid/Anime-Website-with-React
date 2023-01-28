@@ -1,9 +1,8 @@
-
+import {Header , Footer} from './Components/index'
 const App = ()=>{
   return <>
-  <div className="container bg-dark text-light rounded">
-    hello world!
-  </div>
+  <Header />
+  <Footer/>
   </>
 }
 export default App
