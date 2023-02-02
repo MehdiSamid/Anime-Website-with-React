@@ -1,8 +1,9 @@
 import './Footer.css'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div>Footer</div>
+    <div className=''>
+        {props.text}</div>
   )
 }
 

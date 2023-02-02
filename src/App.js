@@ -1,8 +1,12 @@
-import {Header , Footer} from './Components/index'
+import {Header , Footer, Container,Hero} from './Components/index'
 const App = ()=>{
   return <>
   <Header />
-  <Footer/>
+  <Container>
+      <Hero/>
+  </Container>
+  {/* <Footer/> */}
+  
   </>
 }
 export default App

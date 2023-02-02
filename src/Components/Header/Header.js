@@ -1,23 +1,27 @@
 import './Header.css'
+import logo from "../../assets/images/logo.png"
+import NavItem,{NavItemDropDown} from '../NavItems/NavItem'
 
 const Header =()=>{
     return <nav className="navbar navbar-expand-lg navbar-dark text-light bg-dark">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">Navbar</a>
+      <a className="navbar-brand pb-1" href="#"> 
+      <img src={logo} alt="" />
+      </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
+          <NavItem>
             <a className="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Link</a>
-          </li>
-          <li className="nav-item dropdown">
+          </NavItem>
+          <NavItem>
+            <a className="nav-link" href="#">Best Anime</a>
+          </NavItem>
+          <NavItemDropDown>
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Categories
             </a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a className="dropdown-item" href="#">Action</a></li>
@@ -25,14 +29,11 @@ const Header =()=>{
               <li><hr className="dropdown-divider"/></li>
               <li><a className="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
+          </NavItemDropDown>
         </ul>
         <form className="d-flex" method='get'>
-          <input className="form-control me-2" name='Name' type="search" placeholder="Search" aria-label="Search"/>
-          <button className="btn btn-outline-success" type="submit">Search</button>
+          <input className="form-control me-2" name='NameAnime' type="search" placeholder="Search" aria-label="Search"/>
+          <button className="btn btn-outline-danger" type="submit">Search</button>
         </form>
       </div>
     </div>
