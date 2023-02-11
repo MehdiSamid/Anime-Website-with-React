@@ -1,9 +1,9 @@
 import './Header.css'
 import logo from "../../assets/images/logo.png"
-import NavItem,{NavItemDropDown} from '../NavItems/NavItem'
+import NavItem,{NavItemDropDown} from '../../Components/NavItems/NavItem'
 
 const Header =()=>{
-    return <nav className="navbar navbar-expand-lg navbar-dark text-light bg-dark">
+    return <nav className=" container navbar navbar-expand-lg navbar-dark text-light bg-dark">
     <div className="container-fluid">
       <a className="navbar-brand pb-1" href="#"> 
       <img src={logo} alt="" />

@@ -1,0 +1,27 @@
+.hero-main{
+    background-color: #2f3640;
+    color: var(--color-light);
+    border-radius: calc(var(--padding-primary)/2);
+    padding: var(--padding-primary);
+    background: url('../../assets/images/hero/hero-1.jpg') no-repeat top right/cover;
+}
+.hero-text{
+    max-width: 500px;
+}
+.hero-title{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+
+.hero-title em{
+    font-style: normal ;
+    color: lightcoral;
+}
+
+.hero-subtitle{
+    font-size: 20px;
+    font-family: 400;
+}
+

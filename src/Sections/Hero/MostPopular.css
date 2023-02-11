@@ -1,0 +1,19 @@
+.section-wrapper{
+    padding: calc(var(--padding-primary)/2);
+    /* margin: var(--margin-primary); */
+    border-radius: calc(var(--padding-primary)/2);
+    
+}
+
+.section-header , h4{ 
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-light);
+}
+
+.most-popular-items{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    
+}

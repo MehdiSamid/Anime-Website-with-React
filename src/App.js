@@ -1,10 +1,13 @@
-import {Header , Footer, Container,Hero} from './Components/index'
+import {Header , Footer,Hero, MostPopular} from './Sections'
+import {Container} from './Components'
 const App = ()=>{
   return <>
   <Header />
   <Container>
       <Hero/>
+      <MostPopular/>
   </Container>
+
   {/* <Footer/> */}
   
   </>
