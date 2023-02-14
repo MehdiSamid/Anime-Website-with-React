@@ -1,14 +1,4 @@
-
-.most-popular-items{
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-
-
-/* .section-wrapper{
+.section-wrapper{
     padding: calc(var(--padding-primary)/2);
     margin-top: calc(var(--margin-primary)/2);
     border-radius: calc(var(--padding-primary)/2);
@@ -22,10 +12,3 @@
     color: var(--color-light);
     padding-left: 12px;
 }
-
-.most-popular-items{
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    
-} */

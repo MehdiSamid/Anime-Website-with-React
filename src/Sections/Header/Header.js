@@ -6,7 +6,7 @@ const Header =()=>{
     return <nav className=" container navbar navbar-expand-lg navbar-dark text-light bg-dark">
     <div className="container-fluid">
       <a className="navbar-brand pb-1" href="#"> 
-      <img src={logo} alt="" />
+      <img className='img-head' src={logo} alt="Logo" />
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@ const Header =()=>{
             <a className="nav-link active" aria-current="page" href="#">Home</a>
           </NavItem>
           <NavItem>
-            <a className="nav-link" href="#">Best Anime</a>
+            <a className="nav-link" href="#">Most Popular</a>
           </NavItem>
           <NavItemDropDown>
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -1,25 +1,21 @@
 import './MostPopular.css'
-import {MostPopularItem} from '../../Components/index'
+import {MostPopularItem , SectionWrapper} from '../../Components/index'
+import MostPopularData from '../../Data/MostPopularData'
 
 const MostPopular = () => {
+
+
+
+  const cards = MostPopularData.map(card =>{
+    return <MostPopularItem key={card.id} img={card.img} title={card.title} genre="Anime" avis="4.7" downloads="1.4M"/>
+  })
   return (
-    <div className='section-wrapper'>
-        <div className='section-header'>
-            MostPopular
-        </div>
-        <div className='most-popular-items'>
-            
-            <MostPopularItem title="Naruto" genre="Anime" avis="4.6" downloads="1.4M"/>
-            <MostPopularItem title="Naruto" genre="Anime" avis="4.6" downloads="1.4M"/>
-            <MostPopularItem title="Naruto" genre="Anime" avis="4.6" downloads="1.4M"/>
-            <MostPopularItem title="Naruto" genre="Anime" avis="4.6" downloads="1.4M"/>
-            <MostPopularItem title="Naruto" genre="Anime" avis="4.6" downloads="1.4M"/>
-            <MostPopularItem title="Naruto" genre="Anime" avis="4.6" downloads="1.4M"/>
-            <MostPopularItem title="Naruto" genre="Anime" avis="4.6" downloads="1.4M"/>
-            <MostPopularItem title="Naruto" genre="Anime" avis="4.6" downloads="1.4M"/>
-                
-        </div>
-    </div>
+    <SectionWrapper title="Most Popular" >
+      <div className='most-popular-items'>  
+            {cards}
+      </div>
+          
+       </SectionWrapper>
   )
 }
 

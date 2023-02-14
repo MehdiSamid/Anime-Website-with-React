@@ -1,5 +1,5 @@
 import './MostPopularItem.css'
-import popularImg from '../../assets/images/popular/popular-1.jpg' 
+import { AiFillStar , AiOutlineCloudDownload } from "react-icons/ai";
 
 
 const MostPopularItem = (props) => {
@@ -7,16 +7,16 @@ const MostPopularItem = (props) => {
     <div className='most-popular-item'>
     <div className='card-wrapper'>
 
-                        <img className='most-popular-item-img' src={popularImg} alt='img-of-anime'/>
+                        <img className='most-popular-item-img' src={props.img} alt='img-of-anime'/>
                     
                     <div className='most-popular-content'>
                         <h4 className='most-popular-item-title'>
                             {props.title} <br/>
-                            <span>{props.genre}</span>
+                            <span style={{color:'gray',fontSize:"12px",fontFamily:"sans-serif"}}>{props.genre}</span>
                         </h4>
-                        <ul>
-                            <li>{props.avis}</li>
-                            <li>{props.downloads}</li>
+                        <ul className='li-card'>
+                           <li><span style={{'color':"yellow","padding":'3px',"marginBottom":"2px"}}><AiFillStar/></span><span>{props.avis}</span></li>
+                            <li><span style={{'color':"var(--color-secondary)","padding":'1px',"marginBottom":"2px"}}><AiOutlineCloudDownload/></span><span>{props.downloads}</span></li>
                         </ul>
 
                     </div>

@@ -1,12 +1,14 @@
 .card-wrapper{
-    background-color: var(--color-darkest);
-    padding: calc(var(--padding-primary)/4);
-    margin: calc(var(--margin-primary)/5);
+    background-color: var(--color-dark);
+    /* padding: calc(var(--padding-primary)/10); */
+    margin: calc(var(--margin-primary)/4);
     border-radius: calc(var(--padding-primary)/4); 
     
 }
 .most-popular-item-title{
     font-size: 14px;
+    flex: 1;
+    line-height: 1.2rem;
 }
 
 .most-popular-item-img{
@@ -22,13 +24,10 @@
     justify-content: space-between;
 }
 
-h4{
-    font-size: 26px;
-}
 .most-popular-item{
-    flex : 1;
+    flex : 1 25%;
 }
 
-li{
-    font-size: 18px;
+.li-card{
+    font-size: 14px;
 }
