@@ -1,5 +1,6 @@
 import "./Hero.css"
 // import heroImg from "../../assets/images/hero/hero-1.jpg" 
+import { PrimaryButton } from "../../Components"
 
 
 const Hero = ()=>{
@@ -10,7 +11,7 @@ const Hero = ()=>{
            <h4 className="hero-title"> <em>Browse </em> Our Best Anime,
             </h4>
             <div className="main-button">
-                <a href="browse.html"> Browse Now </a>
+                <PrimaryButton link="/#" > Browse Now</PrimaryButton>
             </div>
         </div>
        </div>

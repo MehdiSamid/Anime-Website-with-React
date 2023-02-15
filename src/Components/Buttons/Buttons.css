@@ -1,0 +1,33 @@
+
+.button a{
+    display: inline;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border-color: lightcoral;
+    text-decoration: none;
+    color: var(--color-light);
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    
+}
+
+.btn-pri a{
+    background-color: lightcoral;
+}
+
+.btn-pri a:hover{
+    background-color: var(--color-light);
+    color: lightcoral;
+}
+
+.btn-sec a{
+    border:1px solid lightcoral;
+    color: var(--color-light);
+
+}
+
+.btn-sec a:hover{
+    background-color: lightcoral;
+    
+
+}
