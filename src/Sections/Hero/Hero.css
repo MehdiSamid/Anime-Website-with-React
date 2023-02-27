@@ -25,3 +25,14 @@
     font-family: 400;
 }
 
+@media screen and (max-width: 992px){
+    .hero-title{
+        font-size: 38px;
+    }
+    .hero-main{
+        background: url('../../assets/images/hero/hero-1.jpg') 
+        no-repeat cover center  ;
+        
+    }
+    
+}

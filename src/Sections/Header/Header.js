@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 const Header =()=>{
     return <nav className=" container navbar navbar-expand-lg navbar-dark text-light bg-dark">
     <div className="container-fluid">
-      <a className="navbar-brand pb-1" href="/"> 
+      <Link className="navbar-brand pb-1" to="/"> 
       <img className='img-head' src={logo} alt="Logo" />
-      </a>
+      </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
