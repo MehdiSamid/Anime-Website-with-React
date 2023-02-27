@@ -1,6 +1,6 @@
-import {Header ,Footer} from './Sections'
-import { Home , MostPopularPage } from './Pages/index'
-import {Container} from './Components'
+import {Header ,Footer, Library, MostPopular} from './Sections/index'
+import { Home ,  } from './Pages/index'
+import {Container} from './Components/index'
 
 import { BrowserRouter as Router , Routes , Route } from 'react-router-dom'
 
@@ -13,7 +13,9 @@ const App = ()=>{
       <Routes>
 
         <Route path='/' element={<Home/>} />
-        <Route path='most-popular' element={<MostPopularPage/>} />
+        <Route path='most-popular' element={<MostPopular/>} />
+        <Route path='Library' element={<Library/>}/>
+        
 
       </Routes>
 

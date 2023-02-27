@@ -11,7 +11,7 @@ const MostPopular = () => {
   })
   return (
     <SectionWrapper title="Most Popular" >
-      <div className='most-popular-items'>  
+      <div className='most-popular-items' >  
             {cards}
       </div>
           

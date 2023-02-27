@@ -9,9 +9,10 @@ const PrimaryButton = (props) => {
 }
 
 const SecondaryButton = (props) => {
+
   return (
     <div className=" button btn-sec">
-      <a href={props.link}>{props.children}</a>
+      <a href={props.link}>{props.children} </a>
     </div>
   )
 }

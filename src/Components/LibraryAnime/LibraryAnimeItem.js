@@ -3,6 +3,10 @@ import '../../Data/LibraryData'
 import { SecondaryButton } from '../Buttons/Buttons'
 
 const LibraryAnimeItem = (props) =>{
+
+    
+
+    
     return(
         <div className='Library-Anime-Item'>
                <ul>

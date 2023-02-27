@@ -4,7 +4,7 @@ import { AiFillStar , AiOutlineCloudDownload } from "react-icons/ai";
 
 const MostPopularItem = (props) => {
   return (
-    <div className='most-popular-item'>
+    <div className='most-popular-item' id='most'>
     <div className='card-wrapper'>
 
                         <img className='most-popular-item-img' src={props.img} alt='img-of-anime'/>

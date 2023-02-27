@@ -5,7 +5,7 @@ import { PrimaryButton } from "../../Components"
 
 const Hero = ()=>{
     return(
-       <div className="hero-main" >
+       <div className="hero-main" id="hero" >
         <div className="hero-text">
            <h6 className="hero-subtitle" > Welcome To Anime</h6>
            <h4 className="hero-title"> <em>Browse </em> Our Best Anime,
