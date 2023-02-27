@@ -11,9 +11,9 @@ const Library = () =>{
 
 
     return(
-        <div>
+        <div >
             <SectionWrapper title='Library Anime'>
-                <div className="Library-Anime-Item">
+                <div className="Library-Anime-Item" >
                     {cards}
                 </div>
             </SectionWrapper>
